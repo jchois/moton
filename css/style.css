@@ -9,7 +9,6 @@ body{
     padding: 0;
 	height: auto;
     font-family: sans-serif;
-    background-color: #eb504d;
 }
 
 button{
@@ -121,6 +120,9 @@ header{
     background-color: black;
     border-radius: 5px;
 }
+.nav-butt{
+    display: none;
+}
 
 /* section 1*/
 
@@ -130,6 +132,7 @@ header{
     background-color: #eb504d;
 }
 .sec1{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center
@@ -143,19 +146,30 @@ header{
     flex-direction: column;
     justify-content: center;
 }
+.img-sec-1{
+    width: 700px;
+}
+.messi-img{
+    width: 700px;
+}
+
 .asmart-t{
     margin-top: 8px;
     font-size: 16px;
 }
 .slides{
+    width: 100%;
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.slide{
-    margin: 0 50px 0 50px;
+#slide-id-1{
+    margin: 0 0 0 -50px;
+}
+#slide-id-2{
+    margin: 0 -50px 0 0;
 }
 
 /* section 2*/
@@ -193,11 +207,9 @@ header{
 }
 .icon-sec-2{
     width: auto;
-    height: ;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-
 }
 .icon-1{
     text-align: center;
@@ -573,4 +585,342 @@ td{
 }
 .inf-foo{
     color: #eb504d;
+}
+
+@media (max-width: 1100px){
+
+    /* section 1*/
+    .a1{
+        margin-left: 25px;
+    }
+    .header-sec {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #slide-id-1 {
+        margin: 0 0 0 10px;
+    }
+    #slide-id-2 {
+        margin: 0px 10px 0 0;
+    }
+
+    /* section 4 */  
+    .img-content {
+        width: 175px;
+    }
+    .arrow{
+        margin-left: 2px;
+    } 
+    .arrow1{
+        margin-right: 2px;
+    } 
+    
+    /* section 6 */
+    .lr-arrow {
+        margin-left: 10px;
+    }
+    .lr-arrow1{
+        margin-right: 10px;
+    }
+}
+
+/* media q t */
+
+@media (max-width: 850px){
+
+    /*header*/
+    .ul-1 {
+        padding: 0 0 0 0;
+    }
+
+    /* section 1 */
+    .section-1{
+        height: 480px;;
+    }
+    .slides{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .img-sec-1{
+        width: 600px;
+    }
+    .messi-img{
+        width: 100%;
+    }
+    .slide{
+        width: 50px;
+        margin: 0 3px 0 3px;
+    }
+    .a1{
+        margin-left: -12px;
+    }
+    .header-sec {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #slide-1{
+        width: 60px;
+        margin: 0 0 0 10px;
+        z-index: 1;
+    }
+    #slide-2{
+        width: 60px;
+        margin: 0 0 0 -10px;
+    }
+
+    /* section 2 */
+
+    .section-2{
+        height: 800px;
+    }
+    .icon-sec-2{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*section 3*/
+    .section-3{
+        height: 1520px;
+    }
+    .img-profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-1{
+        margin-bottom: 20px;
+    }
+
+    /*section 4*/
+    .section-4{
+        height: 500px;
+    }
+    .img-4 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .img-content {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #circ1{
+        
+    }
+    .img-barca{
+        display: none;
+    }
+    .green{
+        background-color: #626262;
+    }
+    #circ3{
+        background-color: #6bc573
+    }
+
+    /*section 5*/
+    .section-5{
+        height: 1250px;
+    }
+    .offer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .offer-1{
+        margin-bottom: 130px;
+    }
+    .text-sec-5{
+        margin-top: -90px;
+    }
+
+    /*section 6*/
+    .lr-arrow, .lr-arrow1{
+        margin: 0 40px 0 40px;
+    }
+    .section-6{
+        height: 280px;
+    }
+    .p-sec-6{
+        text-align: center;
+    }
+    /*section 7*/
+    .sec7{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    /*footer*/
+    .info-foo{
+        width: 400px;
+    }
+}
+
+/* media q mobile */
+
+@media (max-width: 470px){
+
+    /*header*/
+    .nav-butt{
+        display: block;
+    }
+    #log-moton{
+        position: relative;
+        top: 0;
+        left: 35px;
+    }
+    /* 	MENU */
+    .butt-header{
+        margin: 0 0 30px 0;
+        background-position: 160px 13px; 
+        border: none;
+        border-radius: 50px;
+        margin-left: 30px;
+        background-color: #f2f3f7;
+        width: 190px;
+        height: 45px;
+        padding: 0 0 0 10px;
+        font-size: 25px;
+    }
+    .nav {
+        position:absolute;
+        width:250px;
+        height:100vh;
+        top:0;
+        left:-270px; /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
+        padding-top:25px;
+        background-color: rgba(29, 33, 32, 1);
+        border-right:4px solid #dfe7e4;
+        transition:all .5s ease; /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/
+        z-index: 2;
+    }
+    /*Estilos de los li del menú*/
+    .nav__item {
+        display:block;
+        width:96%;
+        margin:0 auto;
+        line-height:2;
+        text-decoration: none;
+        position:relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+        border-bottom:.5px solid rgba(59, 62, 61, 1);
+        border-top:.5px solid rgba(59, 62, 61, 1);
+        background-color:transparent;
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        text-align:center;
+        color:#dee7e4;
+    }
+    /*Estos son los estilos de la hamburguesa del menú que abre y cierra el mismo*/
+    .menu-toogle{
+        position:absolute; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
+        width: 50px;
+        line-height:1.1;
+        text-align:center;
+        top: 20px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
+        left: 8px; 
+        border-radius:3px;
+        background-color: transparent;
+        transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
+        z-index:50;
+    }
+    /*Añadimos la haburguesa y le damos unos estilos*/
+    .menu-toogle::before {
+        content:"☰";
+        font-size:40px;
+        color: white;
+    }
+    /*Estos son los estilos que le dan la funcionalidad al menú*/
+    /*El checkbox según esté activado o no hará que el menú aparezca o desaparezca*/
+    .checkbox {
+        display:none; /*Ocultamos el checkbox pues no nos interesa que se vea*/
+    }
+    .checkbox:checked ~ .nav {
+        left:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+        position:fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
+    }
+    .checkbox:checked ~ .main-w {
+        margin-left:200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+    }
+    .checkbox:checked ~ .menu-toogle { 
+        left:258px;
+        position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
+    }
+    /* FIN MENU */
+
+    /* section 1*/
+    .section-1{
+        height: 420px;
+    }
+    .img-sec-1{
+        width: 300px;
+    }
+    .messi-img{
+        width: 100%;
+    }
+    .img-slide{
+        width: 50px;
+        border: 2px solid red;
+    }
+    #slide-1{
+        width: 50px;
+        margin: 0 0 0 15px;
+    }
+    #slide-2{
+        width: 50px;
+        margin: 0 15px 0 -10px;
+    }
+    
+    .nav-header{
+        display: none;
+    }
+
+    /*section 4*/
+    .section-4 {
+        height: 460px;
+    }
+    .img-content{
+        width: 100px;
+        text-align: center;
+    }
+    .img-t-app{
+        display: none;
+    }
+    #circ3{
+        background-color: #626262;
+    }
+    #circ2{
+        background-color: #6bc573
+    }
+
+    /*section 6*/
+    .section-6{
+        height: 300px;
+    }
+    .p-sec-6{
+        font-size: 16px;
+    }
+    /*section 7*/
+    .date{
+        font-size: 13px;
+    }
+
+    /*footer*/
+    .info-foo{
+        width: 340px;
+    }
 }
